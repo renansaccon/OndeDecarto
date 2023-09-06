@@ -14,4 +14,10 @@ export class SugestPage implements OnInit {
   ngOnInit() {
   }
 
+  produto:String="";
+  ponto:String="";
+  endereco:String="";
+  cidadeestado:String="";
+  telefone:String="";
+
 }
