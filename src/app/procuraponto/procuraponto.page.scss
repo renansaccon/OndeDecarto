@@ -1,0 +1,44 @@
+ion-checkbox {
+    --size: 32px;
+    --background-checked: blue;
+  }
+  
+  ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid blue;
+  }
+
+ion-content{
+  --background: url('/../assets/background/background.png') no-repeat center center/ cover;
+}
+
+ion-button{
+  --background: #9aa371;
+  --background-hover: #6b724c;
+  --background-activated: #9aa371;  
+
+  --border-radius: 400px;
+}
+
+ion-list{
+  margin-top: 20%;
+  background: rgba(0, 128, 0, 0.0);
+
+  color: white;
+}
+
+ion-item{
+  margin-top: 2%;
+  margin-bottom: 10%;
+  --background: rgba(107, 114, 76, 0.7);
+
+  color: white;
+}
+
+ion-segment-button{
+  color:black;
+}
+
+ion-label{
+  white-space:'pre-line';
+}

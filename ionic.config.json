@@ -1,0 +1,7 @@
+{
+  "name": "OndeDescarto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,24 @@
+ion-content{
+    --background: url('/../assets/background/background.png') no-repeat center center/ cover;
+  }
+  
+  ion-button{
+    --background: #9aa371;
+    --background-hover: #6b724c;
+    --background-activated: #9aa371;  
+  
+    --border-radius: 400px;
+  }
+
+  ion-list{
+    margin-top: 20%;
+    background: rgba(0, 128, 0, 0.0);
+  }
+  
+  ion-item{
+    margin-top: 0.2%;
+    margin-bottom: 0.2%;
+    --background: rgba(107, 114, 76, 0.7);
+
+    color: white;
+  }

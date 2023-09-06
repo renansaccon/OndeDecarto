@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Procurar um Ponto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Categoria</ion-label>
+      <ion-select id="categorias" placeholder=Categorias>
+        <ion-select-option value="eletronicos">Eletrônicos</ion-select-option>
+        <ion-select-option value="linha Branca">Linha Branca</ion-select-option>
+        <ion-select-option value="madeira">Madeira</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label position="stacked">Produto</ion-label>
+    <ion-input [(ngModel)]="product" placeholder="Insira o produto"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    Produto está funcionando?
+      <ion-segment value="default">
+        <ion-segment-button value="Sim">
+          <ion-label>Sim</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="Nao">
+          <ion-label>Não</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+  </ion-item>
+
+  <div id="container">
+    <ion-button routerLink="/listapontos" expand="block" strong>Buscar</ion-button>
+  </div>
+</ion-content>
