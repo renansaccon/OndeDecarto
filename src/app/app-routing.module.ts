@@ -12,8 +12,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'sugest',
-    loadChildren: () => import('./sugest/sugest.module').then( m => m.SugestPageModule)
+    path: 'suggest',
+    loadChildren: () => import('./suggest/suggest.module').then( m => m.suggestPageModule)
   },
   {
     path: 'procuraponto',
