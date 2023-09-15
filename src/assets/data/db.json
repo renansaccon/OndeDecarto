@@ -1,0 +1,22 @@
+{
+    "pontosColeta": [
+        {
+            "id": "1",
+            "categoria": "Eletrônico",
+            "nome": "E-letro",
+            "endereco": "Rua Ermelindo Leão",
+            "numero": "385",
+            "telefone": "(43) 3339-0475",
+            "cidade": "Londrina"
+        },
+        {
+            "id": "2",
+            "categoria": "Eletrônico",
+            "nome": "Prefeitura de Rolandia",
+            "endereco": "Rua cambe",
+            "numero": "0",
+            "telefone": null,
+            "cidade": ""
+        }
+    ]
+}
