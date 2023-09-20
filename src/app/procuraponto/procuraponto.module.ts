@@ -13,7 +13,7 @@ import { ProcurapontoPage } from './procuraponto.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ProcurapontoPageRoutingModule
+    ProcurapontoPageRoutingModule,
   ],
   declarations: [ProcurapontoPage]
 })

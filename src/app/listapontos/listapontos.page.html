@@ -9,13 +9,15 @@
 
 
 <ion-content>
-  <ion-card>  
-    <ion-card-content *ngFor="let ponto of pontos">
-      {{ponto.nome}}
-      {{ponto.categoria}}
-      {{ponto.telefone}}
+  <ion-card *ngFor = "let ponto of getPontoFiltro">
+    <h1>{{ponto.nome}}</h1>
+    {{ponto.categoria}} <br>
+    {{ponto.endereco}} nº{{ponto.numero}} <br>
+    Telefone: {{ponto.telefone}} <br>
+    Cidade: {{ponto.cidade}}
+    <ion-card-content >
       <ion-grid>
-        <ion-row>
+        <ion-row >
         </ion-row>
       </ion-grid>
     </ion-card-content>

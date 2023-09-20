@@ -9,13 +9,19 @@ import { ListapontosPage } from '../listapontos/listapontos.page';
 })
 export class ProcurapontoPage implements OnInit {
 
-  opcaoCategoria="";
+  public opcaoCategoria: string="";
+
   product="";
   funcionamento="";
+
 
   constructor() {
   }
 
+  categoria(opcao){
+    this.opcaoCategoria = opcao;
+    return console.log(this.opcaoCategoria);
+  }
 
 
   ngOnInit() {

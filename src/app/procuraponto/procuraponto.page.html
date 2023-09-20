@@ -12,7 +12,7 @@
     <ion-item>
       <ion-label>Categoria</ion-label>
       <ion-select id="categorias" placeholder=Categorias>
-        <ion-select-option value="eletronicos">Eletrônicos</ion-select-option>
+        <ion-select-option (onclick)="categoria('Eletrônico')" value="eletronicos">Eletrônico</ion-select-option>
         <ion-select-option value="linha Branca">Linha Branca</ion-select-option>
         <ion-select-option value="madeira">Madeira</ion-select-option>
       </ion-select>
