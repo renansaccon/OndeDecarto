@@ -11,25 +11,20 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button div="botaoCategoria" routerLink="/listapontos" expand="full" (click)="categoria('Eletrônico')">
+        <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Eletrônico')">
           <ion-thumbnail>
-            <img alt="eletronics" src="../assets/icon/eletronics.png" />
-          </ion-thumbnail><p>            
-          <h5> Eletrônicos</h5>
-        </ion-button>
-        <ion-button div="botaoCategoria" routerLink="/listapontos" expand="full" (click)="categoria('Lâmpadas')">
-          <ion-thumbnail>
-            <img alt="lampadas" src="../assets/icon/lamp.png" />
-          </ion-thumbnail><p>            
-          <h5> Lâmpadas</h5>
+            <div id="icons"><img alt="eletronics" src="../assets/icon/eletronics.png" /></div>
+            <figcaption><div id="nomeCategoria"> Eletrônicos</div></figcaption>
+          </ion-thumbnail>            
         </ion-button>
       </ion-col>
       <ion-col>
-        <ion-item>
+        <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Lâmpadas')">
           <ion-thumbnail>
-            <img alt="eletronics" src="../assets/icon/eletronics.png" />
-          </ion-thumbnail>
-        </ion-item>
+            <div id="icons"><img alt="lampadas" src="../assets/icon/lamp.png" /></div>
+            <figcaption id="nomeCategoria"> Lâmpadas</figcaption>
+          </ion-thumbnail><p>            
+        </ion-button>
       </ion-col>
     </ion-row>  
   </ion-grid>
