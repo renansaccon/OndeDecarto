@@ -8,11 +8,49 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button div="botaoCategoria" routerLink="/listapontos" expand="full" (click)="categoria('Eletrônico')">
+          <ion-thumbnail>
+            <img alt="eletronics" src="../assets/icon/eletronics.png" />
+          </ion-thumbnail><p>            
+          <h5> Eletrônicos</h5>
+        </ion-button>
+        <ion-button div="botaoCategoria" routerLink="/listapontos" expand="full" (click)="categoria('Lâmpadas')">
+          <ion-thumbnail>
+            <img alt="lampadas" src="../assets/icon/lamp.png" />
+          </ion-thumbnail><p>            
+          <h5> Lâmpadas</h5>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-thumbnail>
+            <img alt="eletronics" src="../assets/icon/eletronics.png" />
+          </ion-thumbnail>
+        </ion-item>
+      </ion-col>
+    </ion-row>  
+  </ion-grid>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ion-content>
   <ion-list>
     <ion-item>
       <ion-label>Categoria</ion-label>
-      <ion-select id="categorias" placeholder=Categorias>
-        <ion-select-option (onclick)="categoria('Eletrônico')" value="eletronicos">Eletrônico</ion-select-option>
+      <ion-select id="categorias" onchange="javascript:categoria(this)" placeholder=Categorias>
+        <ion-select-option value="eletronicos">Eletronico</ion-select-option>
         <ion-select-option value="linha Branca">Linha Branca</ion-select-option>
         <ion-select-option value="madeira">Madeira</ion-select-option>
       </ion-select>
@@ -39,4 +77,4 @@
   <div id="container">
     <ion-button routerLink="/listapontos" expand="block" strong>Buscar</ion-button>
   </div>
-</ion-content>
+</ion-content> -->

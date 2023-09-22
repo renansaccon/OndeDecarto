@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PontosDeColeta } from './models/pontos-de-coleta';
 import { PontosDeColetaService } from './services/pontos-de-coleta.service';
-import { ProcurapontoPage } from '../procuraponto/procuraponto.page';
-
-
+import { opcaoCategoria } from '../procuraponto/procuraponto.page';
 
 @Component({
   selector: 'app-listapontos',
@@ -16,6 +14,8 @@ export class ListapontosPage implements OnInit {
   ponto = {} as PontosDeColeta;
   pontos: PontosDeColeta[] |undefined
   getPontoFiltro: any;
+  categoria = opcaoCategoria;
+
 
   bd = [
     {
@@ -34,9 +34,27 @@ export class ListapontosPage implements OnInit {
         "endereco": "Rua cambe",
         "numero": "0",
         "telefone": null,
-        "cidade": ""
-    }
-];
+        "cidade": "Rolândia"
+    },
+    {
+      "id": "3",
+      "categoria": "Lâmpadas",
+      "nome": "Supermercados Musamar",
+      "endereco": "Rua Pernambuco",
+      "numero": "784",
+      "telefone": "(43) 3324-0020",
+      "cidade": "Londrina"
+    },
+    {
+      "id": "4",
+      "categoria": "Lâmpadas",
+      "nome": "Rede Mercados Muffato",
+      "endereco": "Av. Juscelino Kubitschek",
+      "numero": "2606",
+      "telefone": "(43) 2103-9950",
+      "cidade": "Londrina"
+    },
+  ];
 
   constructor (
     private pontosColetaService: PontosDeColetaService) {}
@@ -49,9 +67,9 @@ export class ListapontosPage implements OnInit {
     // this.mostraLista();
   }
 
-  getPontoFilter(){ //filtro funcionando porém somente no console. Necessita habilitar no ngOnINit
+  getPontoFilter(){
     this.getPontoFiltro = this.bd.filter(function (filtro) {
-     return filtro.categoria == 'opcaoCategoria'
+     return filtro.categoria == opcaoCategoria;
     })}
 
   // getPontoByCategoria(){ //está funcionando porém não é possivel fazer o filtro
