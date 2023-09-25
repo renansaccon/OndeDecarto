@@ -10,23 +10,82 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col>
+      <ion-col class="MarginCol">
         <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Eletrônico')">
           <ion-thumbnail>
-            <div id="icons"><img alt="eletronics" src="../assets/icon/eletronics.png" /></div>
-            <figcaption><div id="nomeCategoria"> Eletrônicos</div></figcaption>
-          </ion-thumbnail>            
+            <div class="icons"><img alt="eletronics" src="../assets/icon/eletronics.png"></div> 
+          </ion-thumbnail>
+          <div class="LabelIcons" style="left: 6px">Eletrônicos</div>        
         </ion-button>
+
       </ion-col>
-      <ion-col>
+      <ion-col class="MarginCol">
         <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Lâmpadas')">
           <ion-thumbnail>
-            <div id="icons"><img alt="lampadas" src="../assets/icon/lamp.png" /></div>
-            <figcaption id="nomeCategoria"> Lâmpadas</figcaption>
+            <div class="icons"><img alt="lampadas" src="../assets/icon/lamp.png"></div>
+            <div class="LabelIcons" style="left: 20px">Lâmpadas</div>
           </ion-thumbnail><p>            
         </ion-button>
       </ion-col>
-    </ion-row>  
+    </ion-row>
+    
+    <ion-row>
+      <ion-col class="MarginCol">
+        <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Pilhas')">
+          <ion-thumbnail>
+            <div class="icons"><img alt="pilhas" src="../assets/icon/bateria.png"></div> 
+          </ion-thumbnail>
+          <div class="LabelIcons" style="left: 32px">Pilhas</div>        
+        </ion-button>
+      </ion-col>
+      <ion-col class="MarginCol">
+        <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Madeira')">
+          <ion-thumbnail>
+            <div class="icons"><img alt="madeira" src="../assets/icon/wood.png"></div>
+            <div class="LabelIcons" style="left: 25px">Madeira</div>
+          </ion-thumbnail><p>            
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="MarginCol">
+        <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Pneu')">
+          <ion-thumbnail>
+            <div class="icons"><img alt="pneu" src="../assets/icon/pneu.png"></div> 
+          </ion-thumbnail>
+          <div class="LabelIcons" style="left: 38px">Pneu</div>        
+        </ion-button>
+      </ion-col>
+      <ion-col class="MarginCol">
+        <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Entulho')">
+          <ion-thumbnail>
+            <div class="icons"><img alt="entulho" src="../assets/icon/build.png"></div>
+            <div class="LabelIcons" style="left: 26px">Entulho</div>
+          </ion-thumbnail><p>            
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="MarginCol">
+        <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Medicamentos')">
+          <ion-thumbnail>
+            <div class="icons"><img alt="medicamentos" src="../assets/icon/medicines.png"></div> 
+          </ion-thumbnail>
+          <div class="LabelIcons" style="left: 4px">Medicamento</div>        
+        </ion-button>
+      </ion-col>
+      <ion-col class="MarginCol">
+        <ion-button routerLink="/listapontos" expand="full" (click)="categoria('Óleo Doméstico')">
+          <ion-thumbnail>
+            <div class="icons"><img alt="entulho" src="../assets/icon/oil.png"></div>
+            <div class="LabelIcons" style="left: 15px ; top: 89px">Óleo<br>Doméstico</div>
+          </ion-thumbnail><p>            
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
   </ion-grid>
 </ion-content>
 

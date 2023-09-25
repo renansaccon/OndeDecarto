@@ -10,8 +10,8 @@
 
 <ion-content>
 <br>
-<h1>{{categoria}}</h1>
-  <ion-card id="cardPontos" *ngFor = "let ponto of getPontoFiltro">
+<h1 style="color: #6b724c; padding-left: 10px">{{categoria}}</h1>
+  <ion-card style="padding-left: 10px; padding-bottom: 10px;" id="cardPontos" *ngFor = "let ponto of getPontoFiltro">
     <h3>{{ponto.nome}}</h3>
     {{ponto.endereco}} nº{{ponto.numero}} <br>
     Telefone: {{ponto.telefone}} <br>
