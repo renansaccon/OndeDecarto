@@ -32,16 +32,19 @@ ion-button{
 }
 
 
-// #nomeCategoria{
-//   margin-top: 130px;
-//   flex-direction: column;
-//   margin-right: 90px;
-//   border-left-width: 30px;
-//   padding-left: 25px;
-//   display: flex;
-//   width: 100%;
-//   size: 100px;
-// }
+.button-activated{
+  --background: #9aa371;
+  --background-hover: #6b724c;
+  --background-activated: #9aa371;
+  --padding-start: 0;
+  --padding-end: 5em;
+  --padding-bottom: 3em;
+  left: 33.34%;
+  height: 100px;
+  width: 100px;
+}
+
+
 
 ion-thumbnail{
   justify-content: center;

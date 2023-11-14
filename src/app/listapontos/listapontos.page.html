@@ -14,7 +14,7 @@
   <ion-card style="padding-left: 10px; padding-bottom: 10px;" id="cardPontos" *ngFor = "let ponto of getPontoFiltro">
     <h3>{{ponto.nome}}</h3>
     {{ponto.endereco}} nº{{ponto.numero}} <br>
-    Telefone: {{ponto.telefone}} <br>
+    Telefone: <a href="tel:"onclick="location.href=this.href+;return false;">{{ponto.telefone}}</a> <br>
     Cidade: {{ponto.cidade}}<br>
   </ion-card>
 </ion-content>

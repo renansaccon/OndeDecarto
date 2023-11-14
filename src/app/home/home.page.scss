@@ -48,3 +48,11 @@ ion-button{
 
   --border-radius: 400px;
 }
+
+.botao.ion-activated{
+  --background: #9aa371;
+  --background-hover: #6b724c;
+  --background-activated: #9aa371;  
+
+  --border-radius: 400px;
+}
