@@ -49,6 +49,22 @@ ion-button{
   --border-radius: 400px;
 }
 
+ion-header{
+  --background: #F3F1E9;
+}
+
+ion-toolbar{
+  --background: #F3F1E9;
+}
+
+#toolbar{
+  background: #F3F1E9;
+}
+
+#title{
+  background: #F3F1E9;
+}
+
 .botao.ion-activated{
   --background: #9aa371;
   --background-hover: #6b724c;

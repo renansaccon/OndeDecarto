@@ -211,6 +211,7 @@ export class ListapontosPage implements OnInit {
 
   constructor (
     private pontosColetaService: PontosDeColetaService) {}
+    
 
   ngOnInit() {
     this.getPontoFilter();
