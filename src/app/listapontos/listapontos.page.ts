@@ -30,11 +30,11 @@ export class ListapontosPage implements OnInit {
     {
         "id": "2",
         "categoria": "Eletrônico",
-        "nome": "Prefeitura de Rolandia",
-        "endereco": "Rua cambe",
-        "numero": "0",
+        "nome": "Green Eletron",
+        "endereco": "Avenida Alexandre Santoro",
+        "numero": "590",
         "telefone": null,
-        "cidade": "Rolândia"
+        "cidade": "Londrina"
     },
     {
       "id": "3",
